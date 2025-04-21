@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cigarettes After Sex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="topTitles">
+    <br><br>
+    <h1>-CAS-</h1>
+    <br><br>
+    <h2>Cigarettes After Sex</h2>
+    </div>
+<header class="header">
+    <nav class="info">
+        <a class="home" href="website.html">Home</a>
+        <a class="shows" href="https://www.cigarettesaftersex.com/shows">Shows</a>
+        <a class="about" href="about.html">About</a>
+    </nav>
+</header>
+    <br><br><br><br><br><br><br><br>
+
+    <div class="hiddenMenu">
+        <div class="albumsMenu">
+            <h2>Albums</h2>
+        </div>
+    </div>
+    <br><br>
+ 
+        <div class="listOfAlbums">
+            <div class="album_cry">
+                <a href="cry.html">
+                    <img src="Pildid/cry_gif.gif" alt="Cry" class="album_cry">
+                    <h3>Cry</h3>
+                </a>
+            </div>
+            <div class="album_x">
+                <a href="x.html">
+                    <img src="Pildid/album_x.jpg" alt="X's" class="album_x">
+                    <h3>X's</h3>
+                </a>
+            </div>
+            <div class="album_cas">
+                <a href="cas.html">
+                    <img src="Pildid/album_cas.png" alt="Cas" class="album_cas">
+                    <h3>Cigarettes After Sex</h3>
+                </a>
+            </div>
+        </div>
+ 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="hiddenMenu">
+        <div class="songsMenu">
+            <h2>Songs</h2>
+        </div>
+    </div>
+    <br><br>
+    <div class="listOfSongs">
+        <!-- <div class="songs"> -->
+            <div class="song_apo">
+                <img src="Pildid/song_apocal.jpg" alt="Apocalypse" class="song_apo">
+                <h3 class="Apoca">Apocalypse</h3>
+            </div>
+            <div class="song_youre">
+                <img src="Pildid/song_youre.jpg" alt="You're All I Want" class="song_youre">
+                <h3 class="youreall">You're All I Want</h3>
+            </div>
+            <div class="song_keepon">
+                <img src="Pildid/song_keepon.jpg" alt="Keep On Loving You" class="song_keepon">
+                <h3 class="keeponloving">Keep On Loving You</h3>
+            </div>
+            <div class="song_pist">
+                <img src="Pildid/song_pistol.jpg" alt="Pistol" class="song_pist">
+                <h3 class="Pistol">Pistol</h3>
+            </div>
+        <!-- </div> -->
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <footer class="footer">
+        <div>© 2025 Cigarettes After Sex. All rights reserved.</div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/cigsaftersex/" class="tra">Instagram</a>
+            <a href="https://open.spotify.com/artist/1QAJqy2dA3ihHBFIHRphZj" class="tra">Spotify</a>
+            <a href="https://www.youtube.com/channel/UCqNxhPZoLJ81i5QaK4nqn8A" class="tra">YouTube</a>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.albumsMenu').addEventListener('click', function() {
+            const albumSection = document.querySelector('.listOfAlbums');
+            if (albumSection.classList.contains('hidden')) {
+                // Show with animation
+                albumSection.classList.remove('hidden');
+                setTimeout(() => {
+                    albumSection.classList.add('visible');
+                }, 10); // Small delay to ensure transition triggers
+            } else {
+                // Hide with animation
+                albumSection.classList.remove('visible');
+                // Wait for animation to finish before hiding completely
+                setTimeout(() => {
+                    albumSection.classList.add('hidden');
+                }, 500); // Match transition duration (0.5s)
+            }
+        });
+        document.querySelector('.lauludnupp').addEventListener('click', function() {
+            document.querySelectorAll('.laulud').forEach(function(element) {
+                element.classList.toggle('hidden');
+            });
+        });
+        </script>
+</body>
+</html>

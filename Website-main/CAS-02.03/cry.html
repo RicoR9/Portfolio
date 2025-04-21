@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album - Cry</title>
+
+<style>
+    a{
+        text-decoration: none;    
+    }
+    body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-image: url(Pildid/background.png);
+    }
+    h1 {
+            text-align: center;
+            color: #dcdcdc;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+    }
+    h1:hover {
+            transform: scale(1.05);
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    p{
+            text-align: center;
+            color: #dcdcdc;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+    }
+    .album-info {
+            text-align: center;
+            margin-bottom: 0px;
+    }
+    .songs-list {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            gap: 2rem;
+            margin-top: 7rem;
+        }
+        .song-item {
+            margin-bottom: 10px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .song-checkbox {
+            display: none;
+        }
+        .song-label {
+            display: flex;
+            padding: 15px;
+            background-color: #464646;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            align-items: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .song-title {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .expand-icon::before {
+            content: "▼";
+            font-size: 12px;
+        }
+        .song-lyrics {
+            padding: 20px;
+            background-color: rgb(40, 40, 40);
+            border-radius: 100px solid #000000;
+            white-space: pre-line;
+            display: none;
+            color: rgb(180, 180, 180);
+            text-align: center;
+        }
+        .song-checkbox:checked + .song-label + .song-lyrics {
+            display: block;
+        }
+        .song-checkbox:checked + .song-label .expand-icon::before {
+            content: "▲";
+        }
+        .heard-status {
+            display: inline-block;
+            margin-left: 10px;
+            background-color: #e74c3c;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        p{
+            color: white;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .song-label:hover {
+            background-color: #5a5a5a;
+            transform: scale(1.02);
+        }
+        .song-label:hover .song-title {
+            color: #f0f0f0;
+        }
+        .peal{
+            max-width: 300px;
+            margin: 0 auto;
+        }
+</style>
+</head>
+
+<body>
+    <div class="album-info">
+        <a href="website.html">
+            <div class="peal">
+                <h1>Cigarettes After Sex</h1>
+            </div>
+        </a>
+        <p>Album: Cry</p>
+        <p>Year: 2019</p>
+    </div>
+    <ul class="songs-list">
+        <li class="song-item">
+            <input type="checkbox" id="song1" class="song-checkbox">
+            <label for="song1" class="song-label">
+                <span class="song-title">Don't Let Me Go</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>When I was young I thought the world of you
+                    You were all that I wanted then
+                    It faded & I never saw you again,
+                    But I won’t forget the love we had
+                    
+                    Come to me now,
+                    Don’t let me go
+                    Stay by my side
+                    
+                    Don’t let me go
+                    Stay with me still
+                    I’ve missed you so
+                    
+                    When I was young I thought the world of you
+                    I was dumb to let you drift away
+                    & though I guess it had to come to an end
+                    No one else could have the love we shared…
+                    
+                    & my heart goes out to you wherever you are…</i>
+            </div>
+        </li>
+
+        <li class="song-item">
+            <input type="checkbox" id="song2" class="song-checkbox">
+            <label for="song2" class="song-label">
+                <span class="song-title">Kiss It Off Me</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>Saw you on the side of the road
+                    I could see you were walking slow, drinking a Slurpee
+                    In a peach baseball cap, falling in my lap
+                    You were so thirsty
+                    
+                    Could you love me instead of all the boyfriends you get?
+                    Know I’d make you forget about all of those rich fuckboys
+                    
+                    Kiss it off me,
+                    If you’re gonna break my heart this is a good start
+                    Kiss it off me
+                    
+                    You always bite your lip when you’re feeling it, as we move slowly
+                    & your peach baseball cap is tossed under the rack of clothes
+                    & your jewelry
+                    
+                    & you beg for it in the morning again before you go to the gym
+                    Said it’s a bad habit you just can’t quit…</i>
+            </div>
+        </li>
+
+        <li class="song-item">
+            <input type="checkbox" id="song3" class="song-checkbox">
+            <label for="song3" class="song-label">
+                <span class="song-title">Heavenly</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>Wanting your love to come into me
+                    Feeling it slow, over this dream
+                    Touch me with a kiss, touch me with a kiss
+                    
+                    Now you’re above feeling it still
+                    Tell me it’s love, tell me it’s real
+                    Touch me with a kiss, feel me on your lips
+                    
+                    Because this is where I want to be
+                    Where it’s so sweet & heavenly
+                    
+                    I’m giving you all my love
+                    
+                    Needing you now to come into me
+                    Feeling it slow, over this dream
+                    Touch me with a kiss, feel me on your lips
+                    
+                    When you’re above feeling it still
+                    Tell me it’s love, tell me it’s real
+                    Touch me with a kiss, touch me with a kiss...
+                    
+                    & when you’re far away I still feel it all
+                    & when you’re far away I still feel it all the same...</i>
+            </div>
+        </li>
+
+        <li class="song-item">
+            <input type="checkbox" id="song4" class="song-checkbox">
+            <label for="song4" class="song-label">
+                <span class="song-title">You're the Only Good Thing In My Life</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>You only fuck for love
+                    Told me you could never get enough
+                    Posing as a Playboy centerfold
+                    You could be my Penthouse Pet, I know
+                    
+                    You make me think of storms on the beaches
+                    With all the lights off
+                    
+                    Everything is wrong, but it’s alright
+                    You’re the only good thing in my life
+                    
+                    Do what your heart desires
+                    Love is always strange when it just starts
+                    Shouldn’t have a care left in the world
+                    Naked, tanning by the swimming pool…
+                    
+                    Laying in the sun,
+                    Never need to tell me when you come
+                    Because you know that I can just feel it</i>
+            </div>
+        </li>
+
+        <li class="song-item">
+            <input type="checkbox" id="song5" class="song-checkbox">
+            <label for="song5" class="song-label">
+                <span class="song-title">Touch</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>I missed you & I cried, but I said that I was alright
+                    & I know it’s been awhile since I needed a distraction
+                    
+                    Because I want to do everything that you want me to
+                    To tell you the truth
+                    
+                    I need to stay alive, so sad that I could die
+                    
+                    It’s leading me on, every time we touch
+                    Leading me on, every time it hurts
+                    Feeling so lonely because it’s not enough
+                    Missing you only ever since we fell in love
+                    
+                    & I watched you do a line that you spread out on the table
+                    I don’t need to see you wired, I just want to see you upside down
+                    
+                    I want to do everything that you want me to
+                    To tell you the truth
+                    
+                    I listened to you cry all night through the telephone…
+                    
+                    Couldn’t say you didn’t want me then when we were lying in my bed that night
+                    You were acting like a different person as if suddenly you wanted to just be friends
+                    I was hurt & so I took a shower so you couldn’t hear me, knowing I had to cry
+                    Sad to know that while my heart was breaking you were sleeping or just faking…</i>
+            </div>
+        </li>
+
+        <li class="song-item">
+            <input type="checkbox" id="song6" class="song-checkbox">
+            <label for="song6" class="song-label">
+                <span class="song-title">Hentai</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>There was a hentai video that I saw
+                    I told you about the night that we first made love
+                    About a girl, who as soon as she made you come
+                    Could show you the future & tell you your fortune
+                    
+                    Beautiful hearts are in your eyes
+                    I’ve been waiting for you to fall for me & let me in your life
+                    I’ve been waiting for you
+                    
+                    Told you I wanted to die in an airplane crash over the ocean
+                    That it was romantic, but you didn’t like it
+                    Thought it was stupid & thinking of me dead was making you feel bad…</i>
+            </div>
+        </li>
+        <li class="song-item">
+            <input type="checkbox" id="song7" class="song-checkbox">
+            <label for="song7" class="song-label">
+                <span class="song-title">Cry</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>It’s making you cry every time you give your love to me this way
+                    Saying you’d wait for me to stay, I know it hurts you,
+                    But I need to tell you something
+                    My heart just can’t be faithful for long
+                    I swear I’ll only make you cry
+                    
+                    Maybe I’d change for you someday, but I can’t help the way I feel
+                    Wish I was good, wish that I could give you my love now…</i>
+            </div>
+        </li>
+        <li class="song-item">
+            <input type="checkbox" id="song8" class="song-checkbox">
+            <label for="song8" class="song-label">
+                <span class="song-title">Falling In Love</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>When I hold you close to me
+                    I could always see a house by the ocean
+                    & last night I could hear the waves
+                    As I heard you say, “all that I want is to be yours”
+                    
+                    Falling in love,
+                    Falling in love
+                    Deeper than I’ve felt it before with you, baby
+                    I feel I’m falling in love with all my heart
+                    
+                    Back when you were far away
+                    We would go on dates to watch the same movie
+                    & you were imagining sitting next to me
+                    & holding my hand for the whole thing…</i>
+            </div>
+        </li>
+        <li class="song-item">
+            <input type="checkbox" id="song9" class="song-checkbox">
+            <label for="song9" class="song-label">
+                <span class="song-title">Pure</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>When you walk in the room in a white bodysuit
+                    & I say, “take it off” so you tell me to watch
+                    
+                    When it’s pure, only your love could get me to fall
+                    When it’s deep, gets so hot & it’s so beautiful
+                    
+                    & the TV is on when we make love
+                    Because we get carried away
+                    We don’t care anyway…
+                    
+                    Wrapped your hair in a towel, but I watch you let it down
+                    & it’s all soaking wet as you take me in your mouth
+                    
+                    & we stare at the street from the back balcony,
+                    But now all I can see is you undressing for me…</i>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

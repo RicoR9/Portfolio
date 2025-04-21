@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album - Cigarettes After Sex</title>
+
+<style>
+    a{
+        text-decoration: none;    
+    }
+    body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-image: url(Pildid/background.png);
+    }
+    h1 {
+            text-align: center;
+            color: #dcdcdc;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+    }
+    h1:hover {
+            transform: scale(1.05);
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    p{
+            text-align: center;
+            color: #dcdcdc;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+    }
+    .album-info {
+            text-align: center;
+            margin-bottom: 0px;
+    }
+    .songs-list {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            gap: 2rem;
+            margin-top: 7rem;
+        }
+        .song-item {
+            margin-bottom: 10px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .song-checkbox {
+            display: none;
+        }
+        .song-label {
+            display: flex;
+            padding: 15px;
+            background-color: #464646;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            align-items: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .song-title {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .expand-icon::before {
+            content: "▼";
+            font-size: 12px;
+        }
+        .song-lyrics {
+            padding: 20px;
+            background-color: rgb(40, 40, 40);
+            border-radius: 100px solid #000000;
+            white-space: pre-line;
+            display: none;
+            color: rgb(180, 180, 180);
+            text-align: center;
+        }
+        .song-checkbox:checked + .song-label + .song-lyrics {
+            display: block;
+        }
+        .song-checkbox:checked + .song-label .expand-icon::before {
+            content: "▲";
+        }
+        .heard-status {
+            display: inline-block;
+            margin-left: 10px;
+            background-color: #e74c3c;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        p{
+            color: white;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .song-label:hover {
+            background-color: #5a5a5a;
+            transform: scale(1.02);
+        }
+        .song-label:hover .song-title {
+            color: #f0f0f0;
+        }
+        .peal{
+            max-width: 300px;
+            margin: 0 auto;
+        }
+</style>
+</head>
+
+<body>
+    <div class="album-info">
+        <a href="website.html">
+        <div class="peal">
+        <h1>Cigarettes After Sex</h1>
+        </div>
+        </a>
+        <p>Album: X's</p>
+        <p>Year: 2024</p>
+    </div>
+    <ul class="songs-list">
+        <li class="song-item">
+            <input type="checkbox" id="song1" class="song-checkbox">
+            <label for="song1" class="song-label">
+                <span class="song-title">X's</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>Do it with the lips that you kept when I finally kissed you
+                    When every single light in the Hills & the Valley went blue
+                    Make love as soft as cinnamon,
+                    Know when to take & when to give
+                    Running out of bed in your leopard print to unlock the door
+                    
+                    Sleeping on your fingertips, dreaming with a filthy heart
+                    Deep within a threesome-kiss, sweet how the words slip
+                    Honest with the love you give, careless with the way you talk
+                    Say you want it just like this, sweet how the words slip
+                    
+                    Do it with the lips that you kept when I said I was yours
+                    With X’s on the prints, they’re of Marilyn by Bert Stern
+                    Lit candles, pink & yellow cake, let’s get fucked up & celebrate
+                    Rolling out of bed in your tangled hair to put some clothes on…</i>
+            </div>
+        </li>
+
+        <li class="song-item">
+            <input type="checkbox" id="song2" class="song-checkbox">
+            <label for="song2" class="song-label">
+                <span class="song-title">Tejano Blue</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>We wanted to fuck with real love
+                    Wanted it sweet, so pure & warm
+                    Never only sleeping over
+                    
+                    We wanted to fuck like all the time
+                    & when you got back from your flight
+                    It was the first thing we did
+                    
+                    & when you say you want it all
+                    I know you want it all
+                    Baby, take it all from me
+                    & when you drag me on the floor & the blue tejano’s on,
+                    You keep your eyes on me
+                    
+                    So get in the waves, swim in your leather
+                    I always will make it feel like you were the last one
+                    Get in the waves like it was the first time
+                    Bless your heart, make you part of my life forever
+                    
+                    In shorts so high waist,
+                    The girl in the arcade said they were the shortest ever
+                    & the rest like “Holiday”,
+                    The live one where she sang, dancing in a polka dot top...
+                    
+                    So get in the waves, swim in your leather
+                    I always will make it feel like you were the last one
+                    Get in the waves like it was the first time
+                    Bless your heart, make you part of my life forever & always...</i>
+            </div>
+        </li>
+
+        <li class="song-item">
+            <input type="checkbox" id="song3" class="song-checkbox">
+            <label for="song3" class="song-label">
+                <span class="song-title">Silver Sable</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>Silver Sable style,
+                    Back in a Marvel Swimsuit Special from the early ‘90s
+                    Page 11, the second edition, with that look on her face
+                    
+                    Right now it’s only the light from the closet
+                    & the radio’s just playing soft hits
+                    Need that atmosphere,
+                    I need that sweet life with its decadent ways
+                    
+                    Stay with me now, I don’t wanna be lonely
+                    Know how you feel by the way that you hold me
+                    & when we kiss
+                    We don’t need to close our eyes in the dark at all
+                    
+                    Silver Sable style,
+                    The way you watch me, sipping from your straw in 34D
+                    Whispering the words “vanilla creme pie”
+                    To see the look on my face
+                    
+                    & still it’s only the light from the closet
+                    While “Number of the Beast” is on your Walkman
+                    & page 11’s gone,
+                    See that it’s ripped out & hanging up on your wall…</i>
+            </div>
+        </li>
+
+        <li class="song-item">
+            <input type="checkbox" id="song4" class="song-checkbox">
+            <label for="song4" class="song-label">
+                <span class="song-title">Hideaway</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>Come on, baby
+                    We’ll make it alright
+                    Bring your speaker & a bottle of white
+                    We’ll go walking in Marina like last time
+                    To the beaches that nobody else likes
+                    
+                    & you’ll put your arms around me
+                    & take me back into that hideaway
+                    & you’ll give your love into me
+                    & take me back into that hideaway
+                    
+                    Now the sun’s out, we’re feeling its sweet light
+                    Waves are crashing, they’re flying those long kites
+                    & I can see it, I can see where our lives go
+                    See us sailing across so many oceans…</i>
+            </div>
+        </li>
+
+        <li class="song-item">
+            <input type="checkbox" id="song5" class="song-checkbox">
+            <label for="song5" class="song-label">
+                <span class="song-title">Holding you, Holding me</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>When your love is slow, hits me & I’m fading
+                    In backyard waterfalls at night when it’s raining
+                    
+                    Holding you, holding me
+                    Kissing forever, we’ll fall together
+                    Holding you, holding me
+                    Kissing, you’re all I tasted
+                    
+                    When it gets hot, the breeze is hitting slowly
+                    & I get high on every word you told me…
+                    
+                    Give me just a little more to calm me
+                    
+                    Your love is slow, hits me & I’m fading
+                    In waterfalls at night when it’s raining…</i>
+            </div>
+        </li>
+
+        <li class="song-item">
+            <input type="checkbox" id="song6" class="song-checkbox">
+            <label for="song6" class="song-label">
+                <span class="song-title">Dark Vacay</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>In summer I’m living on pills & lines
+                    With someone I love, I don’t really like
+                    Been sleeping on the tile & keeping out the light
+                    Then sipping Château Lafite Rothschild
+                    
+                    So come on, come on, dark star
+                    Been loving you & I can’t get enough, dark star
+                    We don’t need Brazzers
+                    
+                    Feel the world around you,
+                    Feel the world surround you,
+                    Feel the world around you,
+                    Feel it all around you crash
+                    
+                    With summertime liquor at five o’clock
+                    Been drinking too heavy on Adderall
+                    I listen to the last message that you left
+                    Then the voice from the suicide hotline…
+                    
+                    Feel the world around you,
+                    Feel the world surround you,
+                    Feel the world around you,
+                    Feel it all around you crash & fall…</i>
+            </div>
+        </li>
+        <li class="song-item">
+            <input type="checkbox" id="song7" class="song-checkbox">
+            <label for="song7" class="song-label">
+                <span class="song-title">Baby Blue Movie</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>Baby blue movie with always for tuesdays
+                    & her love, Sarah, at Brooklyn House Hotel
+                    ‍
+                    I’m just a hurricane eye,
+                    They’re not a little too shy,
+                    Know how I wanted to sing,
+                    Know how they wanted to sing
+                    
+                    Don’t you understand?
+                    Don’t you know
+                    The love that you want’s all the love that you needed?
+                    Gave me all you had,
+                    Gave me all the love that you want,
+                    All the love that you needed
+                    
+                    Baby blue movie with always for tuesdays
+                    & her new bestie, perfectly sweet...
+                    
+                    Don’t you understand?
+                    Don’t you know
+                    The love that you want’s gonna make it feel sweeter?
+                    Gave me all you had,
+                    Gave me all the love that you want,
+                    All the love that you needed</i>
+            </div>
+        </li>
+        <li class="song-item">
+            <input type="checkbox" id="song8" class="song-checkbox">
+            <label for="song8" class="song-label">
+                <span class="song-title">Hot</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>& the summer begins with the taste of your lips
+                    When it’s getting hot inside you
+                    Think you’d burn through your dress if you kissed me again
+                    & it’s getting hot inside
+                    
+                    Is it all in my head?
+                    Because I keep getting scared
+                    That I’ll always be lost forever,
+                    But I don’t give a shit if I’m too delicate
+                    When you hold me it’s always better
+                    
+                    ‍‍Now your lips start to taste of pink lemonade
+                    As I jump off the roof into your pool
+                    Laugh & run from the heat because it’s burning your feet
+                    & it’s getting hot inside…</i>
+            </div>
+        </li>
+        <li class="song-item">
+            <input type="checkbox" id="song9" class="song-checkbox">
+            <label for="song9" class="song-label">
+                <span class="song-title">Dreams From Bunker Hill</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>Baby, it’s been awhile since I’ve just seen you smile
+                    You know it’s not how it’s supposed to be
+                    You’re staying up every night smoking those Camel lights
+                    & drinking on antihistamines
+                    
+                    Do you wanna make it forever?
+                    Do you wanna be my only one?
+                    Because now I really miss the way it was
+                    When everything was beautiful with us
+                    
+                    I think of us moving into our place at Bunker Hill,
+                    We felt so happy there
+                    The time we went for a walk to get wine & candy bars
+                    & it started to rain…
+                    
+                    Do you wanna make it forever?
+                    Do you want me to stay right here?
+                    Do you wanna make it forever?
+                    If you want, I would stay right here…</i>
+            </div>
+        </li>
+        <li class="song-item">
+            <input type="checkbox" id="song10" class="song-checkbox">
+            <label for="song10" class="song-label">
+                <span class="song-title">Ambien Slide</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>Said you couldn’t sleep,
+                    To know I’d been with someone else takes drugs to shut it out
+                    ‍‍& that’s how you’ll get over it
+                    
+                    Take my love with zolpidem
+                    You said you couldn’t help it
+                    Had everything that you wanted when my love was only yours,
+                    But now you’re feeling helpless giving in to your Ambien slide
+                    
+                    & it seems that you’ll never feel that good again
+                    If time doesn’t heal, you’ll never feel that good again…
+                    
+                    When you slide this way…</i>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

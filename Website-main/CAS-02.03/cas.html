@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album - Cigarettes After Sex</title>
+
+<style>
+    a{
+        text-decoration: none;    
+    }
+    body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-image: url(Pildid/background.png);
+    }
+    h1 {
+            text-align: center;
+            color: #dcdcdc;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+    }
+    h1:hover {
+            transform: scale(1.05);
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    p{
+            text-align: center;
+            color: #dcdcdc;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+    }
+    .album-info {
+            text-align: center;
+            margin-bottom: 0px;
+    }
+    .songs-list {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            gap: 2rem;
+            margin-top: 7rem;
+        }
+        .song-item {
+            margin-bottom: 10px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .song-checkbox {
+            display: none;
+        }
+        .song-label {
+            display: flex;
+            padding: 15px;
+            background-color: #464646;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            align-items: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .song-title {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .expand-icon::before {
+            content: "▼";
+            font-size: 12px;
+        }
+        .song-lyrics {
+            padding: 20px;
+            background-color: rgb(40, 40, 40);
+            border-radius: 100px solid #000000;
+            white-space: pre-line;
+            display: none;
+            color: rgb(180, 180, 180);
+            text-align: center;
+        }
+        .song-checkbox:checked + .song-label + .song-lyrics {
+            display: block;
+        }
+        .song-checkbox:checked + .song-label .expand-icon::before {
+            content: "▲";
+        }
+        .heard-status {
+            display: inline-block;
+            margin-left: 10px;
+            background-color: #e74c3c;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        p{
+            color: white;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .song-label:hover {
+            background-color: #5a5a5a;
+            transform: scale(1.02);
+        }
+        .song-label:hover .song-title {
+            color: #f0f0f0;
+        }
+        .peal{
+            max-width: 300px;
+            margin: 0 auto;
+        }
+</style>
+</head>
+
+<body>
+    <div class="album-info">
+        <a href="website.html">
+            <div class="peal">
+                <h1>Cigarettes After Sex</h1>
+            </div>
+        </a>
+        <p>Album: Cigarettes After Sex</p>
+        <p>Year: 2017</p>
+    </div>
+    <ul class="songs-list">
+        <li class="song-item">
+            <input type="checkbox" id="song1" class="song-checkbox">
+            <label for="song1" class="song-label">
+                <span class="song-title">K.</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>I remember when I first noticed that you liked me back
+                    We were sitting down in a restaurant waiting for the check
+                    We had made love earlier that day with no strings attached,
+                    But I could tell that something had changed how you looked at me then
+                    
+                    Kristen, come right back
+                    I've been waiting for you to slip back in bed
+                    When you light the candle
+                    
+                    & on the Lower East Side you're dancing with me now
+                    & I'm taking pictures of you with flowers on the wall
+                    Think I like you best when you're dressed in black from head to toe
+                    Think I like you best when you're just with me & no one else...
+                    & I'm kissing you lying in my room
+                    Holding you until you fall asleep
+                    & it's just as good as I knew it would be
+                    Stay with me
+                    I don't want you to leave...</i>
+            </div>
+        </li>
+
+        <li class="song-item">
+            <input type="checkbox" id="song2" class="song-checkbox">
+            <label for="song2" class="song-label">
+                <span class="song-title">Each Time You Fall in Love</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>Each time you fall in love it’s clearly not enough
+                    You sleep all day & drive out in L.A.
+                    It isn’t safe
+                    
+                    & each time you kiss a girl you never know what it’s worth
+                    You say all of the words they wanna hear
+                    It isn’t real
+                    
+                    She took you for a ride in summer baby
+                    Lost all your money to her
+                    All I wanna know is if you love her how come you never give in
+                    
+                    Each time you have a dream you never know what it means
+                    You see that open road & never know which way to go
+                    
+                    & each time you fall in love it’s clearly not enough
+                    You sleep all day & drive out in L.A.
+                    It isn’t safe…</i>
+            </div>
+        </li>
+
+        <li class="song-item">
+            <input type="checkbox" id="song3" class="song-checkbox">
+            <label for="song3" class="song-label">
+                <span class="song-title">Sunsetz</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>Sunsets
+                    We wander through a foreign town
+                    Strangely there’s nobody else around
+                    So you open your dress & show me your tits
+                    On the swing set at the old playground
+                    
+                    & when you go away I still see you
+                    With sunlight on your face in my rear-view
+                    
+                    Sunsets
+                    I wanna hear your voice
+                    A love that nobody could destroy
+                    Took photographs like Brautigan’s book covers that we both adored…
+                    
+                    This always happens to me this way
+                    Recurring visions of such sweet days
+                    
+                    When you go away I still see you
+                    With sunlight on your face in my rear-view</i>
+            </div>
+        </li>
+
+        <li class="song-item">
+            <input type="checkbox" id="song4" class="song-checkbox">
+            <label for="song4" class="song-label">
+                <span class="song-title">Apocalypse</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>You leapt from crumbling bridges watching cityscapes turn to dust
+                    Filming helicopters crashing in the ocean from way above
+                    
+                    Got the music in you baby,
+                    Tell me why
+                    Got the music in you baby,
+                    Tell me why
+                    You’ve been locked in here forever & you just can’t say goodbye
+                    
+                    Kisses on the foreheads of the lovers wrapped in your arms
+                    You’ve been hiding them in hollowed out pianos left in the dark…
+                    
+                    Your lips,
+                    My lips,
+                    Apocalypse
+                    
+                    Go & sneak us through the rivers,
+                    Flood is rising up on your knees
+                    Oh please…
+                    Come out & haunt me
+                    I know you want me
+                    Come out & haunt me
+                    
+                    Sharing all your secrets with each other since you were kids
+                    Sleeping soundly with the locket that she gave you clutched in your fist…
+                    
+                    When you’re all alone
+                    I will reach for you
+                    When you’re feeling low
+                    I will be there too</i>
+            </div>
+        </li>
+
+        <li class="song-item">
+            <input type="checkbox" id="song5" class="song-checkbox">
+            <label for="song5" class="song-label">
+                <span class="song-title">Flash</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>I’m a flash
+                    You were blinded by the love I had
+                    I’m a flash
+                    The light could only get in through the cracks
+                    
+                    & you’ve gotta do the right thing
+                    Do the right thing baby
+                    You’re the white swan in my photograph
+                    
+                    When they crashed the helicopters in my heart it ripped
+                    Cut in half, you saw me lying there bleeding to death
+                    
+                    & you had to do the right thing
+                    Do the right thing baby
+                    You’re the white swan in my photograph
+                    
+                    Now I stand on the stage
+                    I forget my lines to your play, “Satan’s Imagination”
+                    & a voice in my head’s causing suicide searching for any way to remember them
+                    
+                    Do the right thing
+                    Do the right thing baby
+                    You’re the white swan in my photograph</i>
+            </div>
+        </li>
+
+        <li class="song-item">
+            <input type="checkbox" id="song6" class="song-checkbox">
+            <label for="song6" class="song-label">
+                <span class="song-title">Sweet</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>Watching the video that you sent me
+                    The one where you’re showering with wet hair dripping
+                    You know that I’m obsessed with your body,
+                    But it’s the way you smile that does it for me
+                    
+                    It’s so sweet knowing that you love me
+                    Though we don’t need to say it to each other,
+                    Sweet knowing that I love you & running my fingers through your hair
+                    It’s so sweet
+                    
+                    Watching the video where you’re lying in your red lingerie ten times nightly
+                    You know I think your skin’s the perfect color,
+                    But it’s always your eyes that pull me under
+                    
+                    & I would gladly break it
+                    I would gladly break my heart for you…</i>
+            </div>
+        </li>
+        <li class="song-item">
+            <input type="checkbox" id="song7" class="song-checkbox">
+            <label for="song7" class="song-label">
+                <span class="song-title">Opera House</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>Built an opera house for you in the deepest jungle
+                    & I walked across its stage singing with my eyes closed
+                    
+                    I’ve got a love for you I just can’t escape
+                    All of my love for you cuts me like barbed wire
+                    
+                    I was meant to love you & always keep you in my life
+                    I was meant to love you,
+                    I knew I loved you at first sight
+                    
+                    If I abandoned love I’d be a man without dreams
+                    I’d rather be out there staring death right between its eyes now
+                    
+                    & I can still hear the sound of you crying through the night
+                    There in the opera house with no one else for miles
+                    
+                    I was meant to love you & always keep you in my life
+                    I was meant to love you
+                    I knew I loved you at first sight</i>
+            </div>
+        </li>
+        <li class="song-item">
+            <input type="checkbox" id="song8" class="song-checkbox">
+            <label for="song8" class="song-label">
+                <span class="song-title">Truly</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>Sitting out smoking in the garden of the apartment
+                    I reached in to grab your hand & kissed it when you weren’t looking
+                    
+                    You’re on the sheets like it’s a dirty magazine
+                    & I like the way you say exactly what you mean
+                    
+                    Truly,
+                    Know that you really don’t need to be in love to make love to me
+                    
+                    Said you wear a new perfume for each city that you visit
+                    So you can always remember how it felt to be there
+                    
+                    & your lips were red in all the pictures that you sent
+                    Wearing white or black,
+                    All leading up to when we met…</i>
+            </div>
+        </li>
+        <li class="song-item">
+            <input type="checkbox" id="song9" class="song-checkbox">
+            <label for="song9" class="song-label">
+                <span class="song-title">John Wayne</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>He’s got so much love for her,
+                    But he doesn’t know what to do
+                    Sitting in the car waiting outside her school
+                    He’s in for a heartbreak if it’s all been blind faith from my point of view
+                    
+                    Baby, he’s got to be crazy
+                    Living like he’s John Wayne
+                    Always facing the world or chasing the girl
+                    Baby, he’s got to be crazy
+                    
+                    He’s got so much in his heart,
+                    But he doesn’t know what to do
+                    All he wants is her lying inside his room
+                    He’s always feeling cheated telling all his secrets that I couldn’t keep
+                    
+                    Baby, he’s got to be crazy
+                    Living like he’s John Wayne
+                    Always facing the world or chasing the girl
+                    Baby, he’s got to be crazy</i>
+            </div>
+        </li>
+        <li class="song-item">
+            <input type="checkbox" id="song10" class="song-checkbox">
+            <label for="song10" class="song-label">
+                <span class="song-title">Young & Dumb</span>
+                <span class="expand-icon"></span>
+            </label>
+            <div class="song-lyrics">
+                <i>Wearing black lipstick, bleaching your hair blonde
+                    Put on your socks, cut-offs or jean shorts, vampire fangs & your I Love New York shirt
+                    
+                    Well I know full well that you are the patron saint of sucking cock
+                    Señorita, you’re a cheater
+                    Well so am I
+                    
+                    You wanna go where the girls are young & dumb & hot as fuck
+                    Where they’re dancing in the street with nothing on
+                    
+                    We’ll drive your car to the beach with the song on repeat you showed me
+                    We’ll drive your car to the beach with the song on repeat, oh baby
+                    
+                    My heart is racing watching you kissing on my guitar
+                    Faking a tear drop by spraying my eye with that water gun…
+                    
+                    We wanna go where the girls are young & dumb & hot as fuck
+                    Where they’re dancing in the street with nothing on…</i>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

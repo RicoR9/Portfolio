@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Veebileht</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- ================ MOBIILIVAADE ================ -->
+    
+    <div class="container mobile-view">
+        <div class="d-flex justify-content-between align-items-center py-3">
+            <div>
+                <img src="Images/Group 24.png" href="#" width="60px" height="80px">
+            </div>
+            <div>
+                <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start mobile-view" tabindex="-1" id="offcanvasMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Rico Rimm</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#mina">Mina</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#minu-maailm">Minu maailm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#galerii">Galerii</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container mobile-view mt-3">
+        <div class="card border-0">
+            <div class="card-body p-0">
+                <div class="hero-container position-relative">
+                    <img src="Images/IMG_0261.jpeg" alt="Hero Image" class="img-fluid mb-3">
+                    <div class="hero-text">
+                        <h4>Rico Rimm</h4>
+                        <p>(Mul ei olnud endast laiupidi tehtud pilti, seega võtsin selle, mille leidsin)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card border-0 mt-4">
+            <div class="card-body p-0">
+                <h5>Minu maailm</h5>
+            </div>
+        </div>
+    </div>
+
+    <section class="feature-section mobile-view">
+        <div class="container">
+            <div class="icon-box mt-4">
+                <img src="Images/IMG_5199.jpeg" alt="Icon 1">
+                <h5>Enda kirjeldus</h5>
+                <p>Olen Rico Rimm, 21-aastane. See siin peaks olema juba täitsa sobiv tekst.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-section mobile-view">
+        <div class="container">
+            <div class="icon-box mt-4">
+                <img src="Images/IMG_0196.jpeg" alt="Icon 1">
+                <h5>Hobid</h5>
+                <p>Hobideks on tihtipeale jalgpall. Harrastan sõpradega nädalavahetustel jalgpalli.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-section mobile-view">
+        <div class="container">
+            <div class="icon-box mt-4">
+                <img src="Images/IMG_4723.jpeg" alt="Icon 1">
+                <h5>Oskused</h5>
+                <p>Loodetavasti üheks oskuseks võiks ju nagu juba HTML ja CSS olla.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-section mobile-view mt-4">
+        <div class="container">
+            <h4 class="mb-3">Tekstilõik</h4>
+            <p class="text-block">Lightning McQueen: Okay, Here We Go. Focus. Speed. I'm speed. One winner, 42 losers. I eat losers for Breakfast. Breakfast? Wait, maybe I should have had breakfast? A little Breakfast could been good for me. No, no, no, stay focused. Speed! I'm faster than fast, quicker than quick! I'm Lightning! Mack: [pounds on his trailer door] Hey Lightning, are you ready?</p>
+            <p class="text-block">Lightning McQueen: [Real Gone plays as the trailer door opens] Oh, yeah. Lightning's ready. [McQueen revs his engine, and his different body parts are shown as he drives slowly out of the trailer with his face visible. He then revs his engine again as the crowd cheers. The camera then shows the audience on the stadium seats, then an aerial view of the Motor Speedway of the South Circuit, then a cameraman aiming a camera at the circuit. The camera then shows McQueen on the television screen on the scoring pylon.</p>
+        </div>
+    </section>
+
+    <section class="gallery-section mobile-view mt-4">
+        <div class="container">
+            <h4 class="mb-3">Galerii</h4>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="Images/IMG_4735.jpeg" alt="Gallery 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/IMG_4719.jpeg" alt="Gallery 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/IMG_4502.jpeg" alt="Gallery 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/IMG_0403.jpeg" alt="Gallery 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/IMG_2408.jpeg" alt="Gallery 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/IMG_0213.jpeg" alt="Gallery 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================ DESKTOP VAADE ================ -->
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 desktop-view">
+        <div class="container">
+            <img src="Images/Group 24.png" href="#" width="60px" height="80px">
+            <div class="d-flex">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mina">Mina</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#minu-maailm">Minu maailm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galerii">Galerii</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section desktop-view mt-3">
+        <div class="container">
+            <div class="card border-0">
+                <div class="card-body p-3">
+                    <div class="hero-container position-relative">
+                        <img src="Images/IMG_0261.jpeg" alt="Hero Image" class="img-fluid">
+                        <div class="hero-text">
+                            <h4 class="mb-3">Rico Rimm</h4>
+                            <p>(Mul ei olnud endast laiupidi tehtud pilti, seega võtsin selle, mille leidsin)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="minu-maailm" class="feature-section desktop-view py-5">
+        <div class="container">
+            <h4 class="mb-4">Minu maailm</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="icon-box">
+                        <img src="Images/IMG_5199.jpeg" alt="Icon 1">
+                        <h5>Enda kirjeldus</h5>
+                        <p>Olen Rico Rimm, 21-aastane. See siin peaks olema juba täitsa sobiv tekst.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-box">
+                        <img src="Images/IMG_0196.jpeg" alt="Icon 2">
+                        <h5>Hobid</h5>
+                        <p>Hobideks on tihtipeale jalgpall. Harrastan sõpradega nädalavahetustel jalgpalli.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-box">
+                        <img src="Images/IMG_4723.jpeg" alt="Icon 3">
+                        <h5>Oskused</h5>
+                        <p>Loodetavasti üheks oskuseks võiks ju nagu juba HTML ja CSS olla.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-section desktop-view py-5">
+        <div class="container">
+            <h4 class="mb-4">Tekstilõik</h4>
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-block">Lightning McQueen: Okay, Here We Go. Focus. Speed. I'm speed. One winner, 42 losers. I eat losers for Breakfast. Breakfast? Wait, maybe I should have had breakfast? A little Breakfast could been good for me. No, no, no, stay focused. Speed! I'm faster than fast, quicker than quick! I'm Lightning! Mack: [pounds on his trailer door] Hey Lightning, are you ready?</p>
+                    <p class="text-block">Lightning McQueen: [Real Gone plays as the trailer door opens] Oh, yeah. Lightning's ready. [McQueen revs his engine, and his different body parts are shown as he drives slowly out of the trailer with his face visible. He then revs his engine again as the crowd cheers. The camera then shows the audience on the stadium seats, then an aerial view of the Motor Speedway of the South Circuit, then a cameraman aiming a camera at the circuit. The camera then shows McQueen on the television screen on the scoring pylon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galerii" class="gallery-section desktop-view py-5">
+        <div class="container">
+            <h4 class="mb-4">Galerii</h4>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="Images/IMG_4735.jpeg" alt="Gallery 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/IMG_4719.jpeg" alt="Gallery 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/IMG_4502.jpeg" alt="Gallery 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/IMG_0403.jpeg" alt="Gallery 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/IMG_2408.jpeg" alt="Gallery 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/IMG_0213.jpeg" alt="Gallery 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-body-tertiary text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <h5 class="text-uppercase">Jalus</h5>
+                </div>
+                <div class="col-md-3 d-none d-md-block">
+
+                </div>
+                <div class="col-md-3 d-none d-md-block">
+
+                </div>
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">All rights reserved</li>
+                        <li class="mb-2">
+                            <a href="https://www.tlu.ee/haapsalu/rakendusinformaatika" class="text-body">Haapsalu Kolledz</a>
+                        </li>
+                        <li>Tehtud Bootstrapiga märge</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 mt-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2025 Copyright. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
