@@ -190,18 +190,3 @@ a{
     color: #ffffff;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
-.listOfAlbums{
-    opacity: 0; /* Start hidden */
-    transform: translateY(-20px); /* Start slightly above */
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-    align-items: center;
-}
-
-.listOfAlbums.visible {
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* Slide to normal position */
-}
-
-/* .hidden { */
-    /* display: none; Keep this for initial state */
-/* } */ 
