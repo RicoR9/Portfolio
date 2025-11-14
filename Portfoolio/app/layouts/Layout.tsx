@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 const Layout = ({children}: {children: ReactNode}) => {
     return (
         <div className="flex flex-col">
-        <div className="bg-neutral-900 shadow-sm">
+        <div className="sticky">
         <Header name="Rico Rimm" title="FrontEnd Developer">
             <Navigation />
         </Header>

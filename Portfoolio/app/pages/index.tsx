@@ -1,8 +1,26 @@
+import ApiFetch from "../components/ApiFetch";
+import ProfileCard from "../components/ProfileCard";
+
+export function clientLoader() {
+    return null;
+}
+
 const Home = () => {
     return (
         <section className="text-center select-none">
-            <h1>Welcome to Portfoolio</h1>
-            <p>This is the home page of the portfolio website.</p>
+            <br></br>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 px-4 lg:px-10 items-start">
+                <div className="flex justify-center items-start">
+                    <ProfileCard />
+                </div>
+
+                <div className="flex justify-center">
+                    <aside className="w-full shadow-xl overflow-y-scroll h-[800px] lg:h-[800px] rounded-xl p-6">
+                        <h1 className="font-bold font-serif text-3xl">Fetch</h1>
+                        <ApiFetch />
+                    </aside>
+                </div>
+            </div>
         </section>
     )
 }
