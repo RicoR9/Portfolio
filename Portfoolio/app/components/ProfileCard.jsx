@@ -15,7 +15,6 @@ const ProfileCard = () => {
                     Frontend Developer
                 </p>
                 
-                
                 <div className="w-full mt-8 space-y-4">
                     <div>
                         <div className="flex justify-between text-white/90 text-sm mb-1">

@@ -2,8 +2,8 @@ import { NavLink } from 'react-router'
 
 function Navigation() {
     return (
-        <nav>
-            <ul className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6">
+        <nav className="flex gap-6">
+            <ul className="flex flex-col sm:flex-row sm:space-y-0 sm:space-x-6">
                 <li>
                     <NavLink to="/">Kodu</NavLink>
                 </li>   
