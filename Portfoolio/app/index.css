@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  background: linear-gradient(to right, #1a1a1a, #3e3e3e, #848484);
+body {
+  background-image: url(../public/taust.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
