@@ -6,11 +6,15 @@ import Footer from '../components/Footer'
 const Layout = ({children}: {children: ReactNode}) => {
     return (
         <div className="flex flex-col min-h-screen">
-            <Header name="Rico Rimm" title="FrontEnd Developer" logo="/logo.svg">
+            <Header
+                name="Rico Rimm"
+                logo="/logo.svg"
+                title="Portfolio"
+            >
                 <Navigation />
             </Header>
 
-            <main className="pt-32">
+            <main className="flex-1 pt-32">
                 {children}
             </main>
 

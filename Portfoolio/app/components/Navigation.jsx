@@ -2,11 +2,11 @@ import { NavLink } from 'react-router'
 
 function Navigation() {
     return (
-        <nav className="flex gap-6">
-            <ul className="flex flex-col sm:flex-row sm:space-y-0 sm:space-x-6">
+        <nav className="flex animate-slide-in-left">
+            <ul className="flex flex-col gap-2 sm:gap-6 items-center bg-white/3 p-2 rounded-md text-white">
                 <li>
                     <NavLink to="/">Kodu</NavLink>
-                </li>   
+                </li>
                 <li>
                     <NavLink to="/projects">Projektid</NavLink>
                 </li>

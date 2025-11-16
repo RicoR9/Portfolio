@@ -1,27 +1,21 @@
-import ApiFetch from "../components/ApiFetch";
 import ProfileCard from "../components/ProfileCard";
-import Gallery from "../components/Gallery";
 import Test from "../components/Test";
+import Navigation from "../components/Navigation";
 
-export function clientLoader() {
-    return null;
-}
 
 const Home = () => {
     return (
         <section className="text-center select-none">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 px-4 lg:px-10 items-start">
-                <div className="flex flex-col gap-12">
+            <div className="grid lg:grid-cols-2 gap-12 lg:px-10 items-start">
+                {/* Vasakpool */}
+                <div className="flex flex-col gap-16 items-center mt-auto">
                     <Test />
-                    <ProfileCard />
-                    <Gallery />
+                    <Navigation />
                 </div>
 
-                <div className="flex justify-center">
-                    <aside className="w-full shadow-xl overflow-y-scroll h-[800px] lg:h-[800px] rounded-xl p-6">
-                        <h1 className="font-bold font-serif text-3xl">Fetch</h1>
-                        <ApiFetch />
-                    </aside>
+                {/* Parempool */}
+                <div className="flex justify-end items-start">
+                    <ProfileCard />
                 </div>
             </div>
         </section>
