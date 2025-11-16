@@ -15,6 +15,7 @@ const Layout = ({children}: {children: ReactNode}) => {
             </Header>
 
             <main className="flex-1 pt-32">
+                <img src="/logo.svg" alt="Logo" className="absolute left-60 top-80 w-96 h-96 opacity-80 -z-20"/>
                 {children}
             </main>
 

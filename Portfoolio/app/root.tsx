@@ -10,7 +10,7 @@ import Layout from "./layouts/Layout";
 import "./index.css";
 
 export const links: LinksFunction = () => [
-  { rel: "icon", href: "/favicon.svg" },
+  { rel: "icon", href: "/logo.svg" },
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",

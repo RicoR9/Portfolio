@@ -1,11 +1,9 @@
 const ProfileCard = () => {
     return (
-        <div className="w-[700px] rounded-2xl shadow-2xl p-8 ">
+        <div className="animate-slide-in-right w-[700px] rounded-2xl shadow-2xl p-8 ">
             <div className="flex flex-col items-center">
                 <div className="w-32 h-32 rounded-full bg-white/20 backdrop-blur-lg overflow-hidden shadow-xl">
-                    <div className="w-full h-full bg-gradient-to-br from-neutral-200 to-neutral-800 flex items-center justify-center text-6xl font-bold text-white">
                         <img src="/IMG_6696.jpg" alt="Profile" className="w-full h-full object-cover" />
-                    </div>
                 </div>
                 
                 <h2 className="text-3xl font-bold text-white mt-6">

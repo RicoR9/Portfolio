@@ -3,7 +3,7 @@ import { index, route } from "@react-router/dev/routes";
 
 export default [
     index("pages/index.tsx"),
-    route("projects", "pages/Projects.tsx"),
+    route("information", "pages/Information.tsx"),
     route("about", "pages/About.tsx"),
     route("contact", "pages/Contact.tsx"),
     route("*", "pages/NoMatch.tsx"),
