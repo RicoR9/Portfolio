@@ -1,55 +1,42 @@
 const ProfileCard = () => {
     return (
-        <div className="animate-slide-in-right w-[700px] rounded-2xl shadow-2xl p-8 ">
+        <div className="max-w-4xl mt-[-50px] mx-auto bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl p-8 animate-slide-in-right">
             <div className="flex flex-col items-center">
-                <div className="w-32 h-32 rounded-full bg-white/20 backdrop-blur-lg overflow-hidden shadow-xl">
-                        <img src="/IMG_6696.jpg" alt="Profile" className="w-full h-full object-cover" />
+                <div className="w-64 h-64 rounded-full overflow-hidden border-4 shadow-xl mb-6">
+                    <img 
+                        src="/profile.jpg" 
+                        alt="Rico Rimm" 
+                        className="w-full h-full object-cover"
+                    />
                 </div>
-                
-                <h2 className="text-3xl font-bold text-white mt-6">
-                    Rico Rimm
-                </h2>
-                <p className="text-white/90 text-lg mt-2">
-                    Frontend Developer
-                </p>
-                
-                <div className="w-full mt-8 space-y-4">
-                    <div>
-                        <div className="flex justify-between text-white/90 text-sm mb-1">
-                            <span>React</span>
-                            <span>90%</span>
-                        </div>
-                        <div className="w-full bg-white/20 rounded-full h-2">
-                            <div className="bg-white h-2 rounded-full" style={{ width: '90%' }}></div>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <div className="flex justify-between text-white/90 text-sm mb-1">
-                            <span>JavaScript</span>
-                            <span>85%</span>
-                        </div>
-                        <div className="w-full bg-white/20 rounded-full h-2">
-                            <div className="bg-white h-2 rounded-full" style={{ width: '85%' }}></div>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <div className="flex justify-between text-white/90 text-sm mb-1">
-                            <span>Tailwind CSS</span>
-                            <span>95%</span>
-                        </div>
-                        <div className="w-full bg-white/20 rounded-full h-2">
-                            <div className="bg-white h-2 rounded-full" style={{ width: '95%' }}></div>
-                        </div>
+
+                <h2 className="text-4xl font-bold text-black mb-2">Rico Rimm</h2>
+                <p className="text-xl text-black mb-8">Frontend Developer</p>
+
+                <div className="w-full rounded-lg p-6 mb-6 text-center">
+                    <h3 className="text-2xl font-semibold text-black mb-3">Minust</h3>
+                    <p className="text-black leading-relaxed">
+                        Tere! Olen Rico Rimm, frontend arendaja Eestist. Mulle meeldib luua 
+                        kaasaegseid ja kasutajasõbralikke veebilahendusi React, Tailwind CSS 
+                        ja teiste tehnoloogiatega. Hetkel õpin Tallinna Ülikoolis Rakendusinformaatika eriala.
+                        Hetkel käimas 2. aasta. Olen väga huvitatud just Frontend poole pealt, avatud igale pakkumisele
+                        ja võimalusele                  </p>
+                </div>
+
+                <div className="w-full rounded-lg p-6 mb-6 text-center">
+                    <h3 className="text-2xl font-semibold text-black mb-4">Oskused</h3>
+                    <div className=" gap-3 text-center">
+                        <span className="px-4 py-2 bg-white/10 rounded-full text-black text-sm">React</span>
+                        <span className="px-4 py-2 bg-white/10 rounded-full text-black text-sm">JavaScript</span>
+                        <span className="px-4 py-2 bg-white/10 rounded-full text-black text-sm">Tailwind CSS</span>
+                        <span className="px-4 py-2 bg-white/10 rounded-full text-black text-sm">HTML/CSS</span>
+                        <span className="px-4 py-2 bg-white/10 rounded-full text-black text-sm">Git</span>
                     </div>
                 </div>
-                
-                
-                <button className="w-full mt-6 bg-white/20 backdrop-blur-md hover:bg-white/30 text-white font-semibold py-3 rounded-lg transition-all">
-                    Rohkem infot
-                </button>
-                
+
+                <a href="/" className="inline-block w-80 bg-white/20 hover:bg-white/30 hover:scale-105 text-black font-semibold px-8 py-3 rounded-lg transition-all shadow-lg text-center">
+                    Back
+                </a>
             </div>
         </div>
     );

@@ -1,4 +1,4 @@
-const Test = () => {
+const Main = () => {
     return(
         <div className="relative flex flex-col items-center">
 
@@ -10,4 +10,4 @@ const Test = () => {
     )
 };
 
-export default Test;
+export default Main;
