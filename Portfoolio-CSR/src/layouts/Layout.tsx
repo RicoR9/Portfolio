@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 
 const Layout = ({children}: {children: ReactNode}) => {
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen overflow-x-hidden">
             <Header
                 name="Rico Rimm"
                 logo="/logo.svg"
@@ -14,8 +14,8 @@ const Layout = ({children}: {children: ReactNode}) => {
                 <Navigation />
             </Header>
 
-            <main className="flex-1 pt-32">
-                <img src="/logo.svg" alt="Logo" className="absolute left-60 top-80 w-96 h-96 opacity-80 -z-20"/>
+            <main className="flex-1 pt-32 relative">
+                <img src="/logo.svg" alt="Logo" className="absolute left-1/2 -translate-x-1/2 md:left-60 md:translate-x-0 top-80 w-64 h-64 md:w-96 md:h-96 opacity-80 -z-20"/>
                 {children}
             </main>
 
