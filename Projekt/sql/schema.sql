@@ -1,0 +1,34 @@
+DROP TABLE IF EXISTS movies;
+DROP TABLE IF EXISTS directors;
+DROP TABLE IF EXISTS genres;
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE genres (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL UNIQUE
+);
+
+CREATE TABLE directors (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    birth_year INT
+);
+
+CREATE TABLE movies (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    year INT NOT NULL,
+    genre_id INT,
+    director_id INT,
+    FOREIGN KEY (genre_id) REFERENCES genres(id) ON DELETE SET NULL,
+    FOREIGN KEY (director_id) REFERENCES directors(id) ON DELETE SET NULL
+);
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    role VARCHAR(50) DEFAULT 'user'
+);
