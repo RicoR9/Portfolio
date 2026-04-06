@@ -31,12 +31,12 @@ Projektid on hetkel pooleli, kuid nende eesmärk on:
 - mõista erinevust CSR ja SSR vahel  
 - katsetada erinevaid renderdamise lähenemisi  
 
-📌 CSR versioon on deploy'tud ja kättesaadav siin:  
-👉 http://ricoportfolio.eu  
+CSR versioon on deploy'tud ja kättesaadav siin:  
+http://ricoportfolio.eu  
 
 ---
 
-### 🛒 Veebipood (/shop endpoint)
+### Veebipood (/shop endpoint)
 CSR portfoolio sees olev `/shop` endpoint sisaldab lihtsat veebipoodi, mis on loodud kasutades:
 - WordPress  
 - WooCommerce  
